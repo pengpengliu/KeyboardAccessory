@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7MJ-V6-cf7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Message-->
+        <scene sceneID="r6W-Ar-4VX">
+            <objects>
+                <viewController id="4Oy-7n-I1v" customClass="MessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GlX-7J-5I4"/>
+                        <viewControllerLayoutGuide type="bottom" id="ScV-gr-Fzp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B1a-Dr-RTM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jp2-M5-7rI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="fUg-WN-ILo" kind="embed" id="FS5-nw-COd"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdU-DD-ENa">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IrA-Vo-IUv">
+                                        <rect key="frame" x="8" y="7" width="585" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="IrA-Vo-IUv" secondAttribute="centerY" id="06I-Z8-auP"/>
+                                    <constraint firstAttribute="centerX" secondItem="IrA-Vo-IUv" secondAttribute="centerX" id="0Rk-OC-F9L"/>
+                                    <constraint firstItem="IrA-Vo-IUv" firstAttribute="width" secondItem="JdU-DD-ENa" secondAttribute="width" constant="-15" id="nqj-5j-KcX"/>
+                                    <constraint firstAttribute="height" constant="44" id="u7l-0c-ezu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ScV-gr-Fzp" firstAttribute="top" secondItem="JdU-DD-ENa" secondAttribute="bottom" id="9xg-J5-HkB"/>
+                            <constraint firstAttribute="width" secondItem="JdU-DD-ENa" secondAttribute="width" id="JbZ-4U-IDV"/>
+                            <constraint firstAttribute="centerX" secondItem="JdU-DD-ENa" secondAttribute="centerX" id="RxG-Ab-Ero"/>
+                            <constraint firstAttribute="width" secondItem="jp2-M5-7rI" secondAttribute="width" id="UsI-Am-tdn"/>
+                            <constraint firstAttribute="height" secondItem="jp2-M5-7rI" secondAttribute="height" id="afn-we-5GX"/>
+                            <constraint firstAttribute="centerX" secondItem="jp2-M5-7rI" secondAttribute="centerX" id="xBR-zP-tvL"/>
+                            <constraint firstAttribute="centerY" secondItem="jp2-M5-7rI" secondAttribute="centerY" id="yU0-mO-SK4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Message" id="M9L-Jn-QmX"/>
+                    <connections>
+                        <outlet property="accessoryView" destination="98f-fM-oob" id="Kzl-Mp-WKk"/>
+                        <outlet property="constraintToAdjust" destination="9xg-J5-HkB" id="X8d-GF-F3x"/>
+                        <outlet property="textField" destination="IrA-Vo-IUv" id="J2Z-Jg-WSq"/>
+                        <outlet property="textInputbar" destination="JdU-DD-ENa" id="auG-Ol-nE6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dd-Jh-yjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="98f-fM-oob" customClass="CNInputAccessoryView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1668" y="894"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="JGW-SL-ajc">
+            <objects>
+                <tableViewController id="fUg-WN-ILo" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="acT-Bu-VUN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2YZ-ef-1TB">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2YZ-ef-1TB" id="0VW-Yd-Rn1">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fUg-WN-ILo" id="FTB-D8-Str"/>
+                            <outlet property="delegate" destination="fUg-WN-ILo" id="1hM-7I-igp"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Stf-OV-tUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="1676"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JrN-YZ-F25">
+            <objects>
+                <navigationController id="7MJ-V6-cf7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ePB-Ch-UeH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4Oy-7n-I1v" kind="relationship" relationship="rootViewController" id="6ee-Xe-WD2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vns-PO-V4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="894"/>
+        </scene>
+    </scenes>
+</document>

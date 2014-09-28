@@ -1,4 +1,9 @@
+MessageKeyboardAccessory
+=============================================
+
 模仿iOS系统的Message App的输入框，可以拖拽隐藏。
+
+![Demo Gif](Screenshots/messagekeyboardaccessory.gif)
 
 ## 实现思路
 iOS 7之后，UIScrollView加入了`UIScrollViewKeyboardDismissMode`特性，它采用交互的方式来隐藏keyboard，如果手势作用于keyboard的边缘，那么Keyboard会随着手势进行移动/隐藏。e.g. Message App

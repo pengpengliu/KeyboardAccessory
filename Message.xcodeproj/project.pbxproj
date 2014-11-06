@@ -13,18 +13,7 @@
 		6420B65219D3E45E008303C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6420B65019D3E45E008303C7 /* Main.storyboard */; };
 		6420B65419D3E45E008303C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6420B65319D3E45E008303C7 /* Images.xcassets */; };
 		6420B65719D3E45E008303C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6420B65519D3E45E008303C7 /* LaunchScreen.xib */; };
-		6420B66319D3E45E008303C7 /* MessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6420B66219D3E45E008303C7 /* MessageTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6420B65D19D3E45E008303C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6420B63819D3E45E008303C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6420B63F19D3E45E008303C7;
-			remoteInfo = Message;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6420B64019D3E45E008303C7 /* Message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Message.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +26,10 @@
 		6420B65119D3E45E008303C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6420B65319D3E45E008303C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6420B65619D3E45E008303C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6420B65C19D3E45E008303C7 /* MessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6420B66119D3E45E008303C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6420B66219D3E45E008303C7 /* MessageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6420B63D19D3E45E008303C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6420B65919D3E45E008303C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				6420B64219D3E45E008303C7 /* Message */,
-				6420B65F19D3E45E008303C7 /* MessageTests */,
 				6420B64119D3E45E008303C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				6420B64019D3E45E008303C7 /* Message.app */,
-				6420B65C19D3E45E008303C7 /* MessageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,8 +63,8 @@
 				6420B64D19D3E45E008303C7 /* MessageViewController.h */,
 				6420B64E19D3E45E008303C7 /* MessageViewController.m */,
 				6420B65019D3E45E008303C7 /* Main.storyboard */,
-				6420B65319D3E45E008303C7 /* Images.xcassets */,
 				6420B65519D3E45E008303C7 /* LaunchScreen.xib */,
+				6420B65319D3E45E008303C7 /* Images.xcassets */,
 				6420B64319D3E45E008303C7 /* Supporting Files */,
 			);
 			path = Message;
@@ -98,23 +75,6 @@
 			children = (
 				6420B64419D3E45E008303C7 /* Info.plist */,
 				6420B64519D3E45E008303C7 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6420B65F19D3E45E008303C7 /* MessageTests */ = {
-			isa = PBXGroup;
-			children = (
-				6420B66219D3E45E008303C7 /* MessageTests.m */,
-				6420B66019D3E45E008303C7 /* Supporting Files */,
-			);
-			path = MessageTests;
-			sourceTree = "<group>";
-		};
-		6420B66019D3E45E008303C7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6420B66119D3E45E008303C7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -139,24 +99,6 @@
 			productReference = 6420B64019D3E45E008303C7 /* Message.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6420B65B19D3E45E008303C7 /* MessageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6420B66919D3E45E008303C7 /* Build configuration list for PBXNativeTarget "MessageTests" */;
-			buildPhases = (
-				6420B65819D3E45E008303C7 /* Sources */,
-				6420B65919D3E45E008303C7 /* Frameworks */,
-				6420B65A19D3E45E008303C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6420B65E19D3E45E008303C7 /* PBXTargetDependency */,
-			);
-			name = MessageTests;
-			productName = MessageTests;
-			productReference = 6420B65C19D3E45E008303C7 /* MessageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +110,6 @@
 				TargetAttributes = {
 					6420B63F19D3E45E008303C7 = {
 						CreatedOnToolsVersion = 6.0.1;
-					};
-					6420B65B19D3E45E008303C7 = {
-						CreatedOnToolsVersion = 6.0.1;
-						TestTargetID = 6420B63F19D3E45E008303C7;
 					};
 				};
 			};
@@ -189,7 +127,6 @@
 			projectRoot = "";
 			targets = (
 				6420B63F19D3E45E008303C7 /* Message */,
-				6420B65B19D3E45E008303C7 /* MessageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +139,6 @@
 				6420B65219D3E45E008303C7 /* Main.storyboard in Resources */,
 				6420B65719D3E45E008303C7 /* LaunchScreen.xib in Resources */,
 				6420B65419D3E45E008303C7 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6420B65A19D3E45E008303C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6420B65819D3E45E008303C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6420B66319D3E45E008303C7 /* MessageTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6420B65E19D3E45E008303C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6420B63F19D3E45E008303C7 /* Message */;
-			targetProxy = 6420B65D19D3E45E008303C7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6420B65019D3E45E008303C7 /* Main.storyboard */ = {
@@ -359,40 +273,6 @@
 			};
 			name = Release;
 		};
-		6420B66A19D3E45E008303C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MessageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Message.app/Message";
-			};
-			name = Debug;
-		};
-		6420B66B19D3E45E008303C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MessageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Message.app/Message";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,15 +290,6 @@
 			buildConfigurations = (
 				6420B66719D3E45E008303C7 /* Debug */,
 				6420B66819D3E45E008303C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6420B66919D3E45E008303C7 /* Build configuration list for PBXNativeTarget "MessageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6420B66A19D3E45E008303C7 /* Debug */,
-				6420B66B19D3E45E008303C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

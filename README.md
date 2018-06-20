@@ -1,19 +1,19 @@
 MessageKeyboardAccessory
 =============================================
 
-模仿iOS系统的Message App的输入框，可以拖拽隐藏。
+Imitate the input box of Message.app of iOS system, You can drag and drop to hide.
 
 ![Demo Gif](Screenshots/messagekeyboardaccessory.gif)
 
-## 实现思路
-iOS 7之后，UIScrollView加入了`UIScrollViewKeyboardDismissMode`特性，它采用交互的方式来隐藏keyboard，如果手势作用于keyboard的边缘，那么Keyboard会随着手势进行移动/隐藏。e.g. Message App
+## Implementation ideas
+After iOS 7, UIScrollView added the `UIScrollViewKeyboardDismissMode` feature, which uses an interactive way to hide the Keyboard. If the gesture is applied to the edge of the Keyboard, the Keyboard will move or hide with the gesture.
 
-但是系统对于Message的交互并不直接支持，只能使用黑魔法实现这种效果
-- 将inputView的Frame和keyboard绑定：如果keyboard出现的时候，将inputView的位置移动到keyboard的上方
-- 为输入框添加透明的inputAccessoryView，目的是为了将触发拖拽区域扩大到inputView
-- 监听keyboard的Frame变化，改变inputView的位置
+However, the system does not directly support the interactions like Message.app. Only black magic can be used to achieve this effect.
+- Bind the InputView's Frame to the Keyboard: If Keyboard appears, move the InputView's position to the top of the Keyboard
+- Adds a transparent InputAccessoryView to the input box in order to extend the trigger draggable area to the InputView
+- Listen for changes to the Keyboard's Frame and change the position of the InputView
 
-## 参考
+## Reference
 
 - [SlackTextViewController](https://github.com/slackhq/SlackTextViewController)
-- [KeyboardAccessory](https://developer.apple.com/library/ios/samplecode/KeyboardAccessory/Introduction/Intro.html)
+- [KeyboardAccessory] (https://developer.apple.com/library/ios/samplecode/KeyboardAccessory/Introduction/Intro.html)

@@ -1,4 +1,4 @@
-MessageKeyboardAccessory
+KeyboardAccessory
 =============================================
 
 Imitate the input box of Message.app of iOS system, You can drag and drop to hide.
